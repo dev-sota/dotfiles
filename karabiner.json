@@ -994,20 +994,6 @@
             "simple_modifications": [
                 {
                     "from": {
-                        "key_code": "left_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "a",
-                            "modifiers": [
-                                "command",
-                                "shift"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "caps_lock"
                     },
                     "to": [
@@ -1018,11 +1004,25 @@
                 },
                 {
                     "from": {
-                        "key_code": "right_shift"
+                        "key_code": "left_control"
                     },
                     "to": [
                         {
                             "key_code": "f5"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_shift"
+                    },
+                    "to": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "command",
+                                "shift"
+                            ]
                         }
                     ]
                 }
