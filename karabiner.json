@@ -1001,6 +1001,17 @@
                             "key_code": "left_control"
                         }
                     ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_shift"
+                    },
+                    "to": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [ "command", "shift" ]
+                        }
+                    ]
                 }
             ],
             "virtual_hid_keyboard": {
