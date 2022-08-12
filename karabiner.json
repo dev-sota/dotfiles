@@ -1004,16 +1004,6 @@
                 },
                 {
                     "from": {
-                        "key_code": "left_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f5"
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "right_shift"
                     },
                     "to": [
