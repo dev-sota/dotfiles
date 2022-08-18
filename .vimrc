@@ -22,6 +22,9 @@ if has('vim_starting')
     let &t_EI .= "\e[2 q"
 endif
 
+noremap <S-h> 0
+noremap <S-l> $
+nnoremap Y y$
 inoremap <silent> jj <ESC>
 
 nnoremap x "_x
