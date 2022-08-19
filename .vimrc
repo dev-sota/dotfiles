@@ -37,4 +37,7 @@ vnoremap s "_s
 nnoremap S "_S
 vnoremap S "_S
 
-nnoremap de "_de
+nnoremap d "_d
+vnoremap d "_d
+nnoremap D "_D
+vnoremap D "_D
