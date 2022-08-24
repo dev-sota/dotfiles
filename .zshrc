@@ -30,17 +30,11 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# openssl@3
-export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
-
-# # openssl@1.1
-# export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
-# export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
-# export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
-# export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
+# openssl@1.1
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 
 # Go
 export GO111MODULE=on
@@ -56,8 +50,7 @@ export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 
 # rbenv
-# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 eval "$(rbenv init - zsh)"
 
 # pyenv
