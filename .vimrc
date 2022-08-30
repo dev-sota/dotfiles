@@ -17,10 +17,10 @@ set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,],~
 set rtp+=/opt/homebrew/opt/fzf
 
-if has('vim_starting')
-    let &t_SI .= "\e[6 q"
-    let &t_EI .= "\e[2 q"
-endif
+let &t_ti.="\e[2 q"
+let &t_SI.="\e[6 q"
+let &t_EI.="\e[2 q"
+let &t_te.="\e[0 q"
 
 noremap <S-h> 0
 noremap <S-l> $
@@ -36,3 +36,5 @@ nnoremap s "_s
 vnoremap s "_s
 nnoremap S "_S
 vnoremap S "_S
+
+nnoremap de "_de
