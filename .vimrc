@@ -6,7 +6,6 @@ set noswapfile
 set nocompatible
 set visualbell t_vb=
 set noerrorbells
-
 set number
 set scrolloff=5
 set hlsearch
@@ -26,7 +25,6 @@ inoremap <silent> jj <ESC>
 nnoremap Y y$
 noremap <S-l> $
 noremap <S-h> 0
-noremap 0 "0p
 
 nnoremap x "_x
 vnoremap x "_x
