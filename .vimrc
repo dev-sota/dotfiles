@@ -22,10 +22,11 @@ let &t_SI.="\e[6 q"
 let &t_EI.="\e[2 q"
 let &t_te.="\e[0 q"
 
-noremap <S-h> 0
-noremap <S-l> $
-nnoremap Y y$
 inoremap <silent> jj <ESC>
+nnoremap Y y$
+noremap <S-l> $
+noremap <S-h> 0
+noremap 0 "0p
 
 nnoremap x "_x
 vnoremap x "_x
@@ -37,4 +38,7 @@ vnoremap s "_s
 nnoremap S "_S
 vnoremap S "_S
 
-nnoremap de "_de
+nnoremap c "_c
+vnoremap c "_c
+nnoremap C "_C
+vnoremap C "_C
