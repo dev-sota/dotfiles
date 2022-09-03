@@ -25,7 +25,6 @@ noremap <S-h> 0
 noremap <S-l> $
 nnoremap Y y$
 inoremap <silent> jj <ESC>
-vnoremap p "_dP
 
 nnoremap x "_x
 vnoremap x "_x
