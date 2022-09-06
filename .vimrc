@@ -38,8 +38,12 @@ nnoremap c "_c
 vnoremap c "_c
 nnoremap C "_C
 vnoremap C "_C
+nnoremap d "_d
+vnoremap d "_d
+nnoremap D "_D
+vnoremap D "_D
 
-nnoremap <leader>p "0p
-vnoremap <leader>p "0p
-nnoremap <leader>P "0P
-vnoremap <leader>P "0P
+nnoremap <leader>d "+d
+vnoremap <leader>d "+d
+nnoremap <leader>D "+D
+vnoremap <leader>D "+D
