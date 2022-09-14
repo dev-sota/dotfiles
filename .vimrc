@@ -21,14 +21,10 @@ set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,],~
 set rtp+=/opt/homebrew/opt/fzf
 
-nnoremap Y y$
 inoremap <silent> jj <ESC>
-
+nnoremap Y y$
+vnoremap p "_dP
 nnoremap x "_x
 vnoremap x "_x
-nnoremap X "_X
-vnoremap X "_X
 nnoremap s "_s
 vnoremap s "_s
-nnoremap S "_S
-vnoremap S "_S
