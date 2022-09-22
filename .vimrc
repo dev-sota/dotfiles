@@ -19,7 +19,6 @@ set smartindent
 set clipboard=unnamed
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,],~
-set rtp+=/opt/homebrew/opt/fzf
 
 inoremap <silent> jj <ESC>
 nnoremap Y y$
