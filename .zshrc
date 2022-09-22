@@ -23,9 +23,12 @@ alias tf='terraform'
 alias tg='terragrunt'
 
 # os
+setopt hist_ignore_all_dups
 setopt hist_ignore_dups
+setopt hist_reduce_blanks
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
+# export PS1="%1~ %# "
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
