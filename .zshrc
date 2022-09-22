@@ -2,6 +2,12 @@ autoload -Uz compinit && compinit
 
 bindkey -e
 
+setopt auto_cd
+setopt share_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
+
 alias ls='ls -G -F'
 alias ll='ls -l'
 alias la='ls -la'
@@ -15,12 +21,6 @@ alias d='docker'
 alias dc='docker compose'
 alias tf='terraform'
 alias tg='terragrunt'
-
-setopt auto_cd
-setopt share_history
-setopt hist_ignore_all_dups
-setopt hist_ignore_dups
-setopt hist_reduce_blanks
 
 # pure
 fpath+=$HOME/.zsh/pure
