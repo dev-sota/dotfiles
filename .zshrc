@@ -1,13 +1,7 @@
-autoload -Uz compinit; compinit
+autoload -Uz compinit && compinit
 
-# pure
-fpath+=$HOME/.zsh/pure
-autoload -Uz promptinit; promptinit
-zstyle :prompt:pure:path color cyan
-zstyle ':prompt:pure:prompt:*' color green
-prompt pure
+bindkey -e
 
-# alias
 alias ls='ls -G -F'
 alias ll='ls -l'
 alias la='ls -la'
@@ -22,16 +16,27 @@ alias dc='docker compose'
 alias tf='terraform'
 alias tg='terragrunt'
 
-# os
+setopt auto_cd
+setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_ignore_dups
 setopt hist_reduce_blanks
-export CLICOLOR=1
-export LSCOLORS=gxfxcxdxbxegedabagacad
-# export PS1="%1~ %# "
+
+# pure
+fpath+=$HOME/.zsh/pure
+autoload -Uz promptinit; promptinit
+zstyle :prompt:pure:path color cyan
+zstyle ':prompt:pure:prompt:*' color green
+prompt pure
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# os
+export LANG=ja_JP.UTF-8
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad
+# export PS1="%1~ %# "
 
 # openssl@1.1
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
