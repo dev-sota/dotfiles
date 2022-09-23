@@ -2,17 +2,17 @@ autoload -Uz compinit && compinit
 
 bindkey -e
 
-setopt no_beep
 setopt auto_cd
-setopt share_history
+setopt correct
 setopt hist_ignore_all_dups
 setopt hist_ignore_dups
 setopt hist_reduce_blanks
+setopt no_beep
+setopt share_history
 
 alias ls='ls -G -F'
 alias ll='ls -l'
 alias la='ls -la'
-alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias sed='gsed'
