@@ -4,3 +4,4 @@
 .vscode/
 vendor/
 dump.rdb
+__debug_bin
